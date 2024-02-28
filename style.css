@@ -2,18 +2,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #000;
-    color: #fff; /* Set text color to white */
+    background-color: black;
+    color: white;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
 }
 
 nav ul {
@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -43,9 +43,9 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #333; /* Darker background for main content */
+    background-color: #333;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
 }
 
 section {
@@ -54,13 +54,14 @@ section {
 
 h2 {
     text-align: center;
-    color: #fff; /* Set heading color to white */
+    color: white;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .gallery img {
@@ -69,10 +70,13 @@ h2 {
     border-radius: 5px;
 }
 
-h3 {
-    color: #fff; /* Set heading color to white */
+.video-container {
+    text-align: center;
 }
 
-p {
-    color: #fff; /* Set paragraph text color to white */
+.video-container video {
+    width: 70%;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
