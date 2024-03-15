@@ -39,6 +39,34 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+/* Dropdown styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Changed dropdown background color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown li {
+    margin: 5px 0; /* Adjusted margin */
+}
+
+.dropdown a {
+    color: white; /* Changed dropdown text color */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+/* Show dropdown on hover */
+.dropdown-item:hover .dropdown {
+    display: block;
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
