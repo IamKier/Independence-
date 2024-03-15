@@ -110,3 +110,19 @@ h2 {
     display: block;
     margin: 0 auto;
 }
+.carousel {
+    width: 120%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    flex: 0 0 80%; /* Adjusted width to 80% */
+    margin-right: 10px;
+}

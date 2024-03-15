@@ -29,9 +29,9 @@
     <div>
         <section class="carousel">
             <div class="carousel-images">
-                <img class="carousel-image" src="image1.jpg" alt="Image 1">
-                <img class="carousel-image" src="image2.jpg" alt="Image 2">
-                <img class="carousel-image" src="image3.jpg" alt="Image 3">
+                <img class="carousel-image" src="images/himage1.jpg" alt="Image 1">
+                <img class="carousel-image" src="images/himage2.jpg" alt="Image 2">
+                <img class="carousel-image" src="images/himage3.jpg" alt="Image 3">
             </div>
             
         <section>   
@@ -70,5 +70,26 @@
             <a href="#">Get in Touch</a>
         </section>
     </main>
+
+    <script>
+        // JavaScript for automatic image carousel
+        const carouselImages = document.querySelector('.carousel-images');
+        const carouselImageWidth = document.querySelector('.carousel-image').clientWidth;
+        let imageIndex = 0;
+
+        // Function to change the image every second
+        function changeImage() {
+            imageIndex++;
+            if (imageIndex >= carouselImages.children.length) {
+                imageIndex = 0;
+            }
+            const offset = -carouselImageWidth * imageIndex;
+            carouselImages.style.transform = `translateX(${offset}px)`;
+        }
+
+        // Start the carousel
+        setInterval(changeImage, 1000); // Change image every second
+    </script>
+</body>
 </body>
 </html>
