@@ -9,7 +9,7 @@ body {
 header {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,13 +24,14 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 5px; /* Reduced margin */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
     display: block;
     transition: 0.3s ease;
 }
@@ -43,19 +44,20 @@ nav ul li a:hover {
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #333; /* Changed dropdown background color */
-    padding: 10px;
+    background-color: #333;
+    padding: 5px; /* Reduced padding */
     border-radius: 5px;
 }
 
 .dropdown li {
-    margin: 5px 0; /* Adjusted margin */
+    margin: 3px 0; /* Adjusted margin */
 }
 
 .dropdown a {
-    color: white; /* Changed dropdown text color */
+    color: white;
     text-decoration: none;
     display: block;
+    font-size: 14px; /* Reduced font size */
 }
 
 .dropdown a:hover {
