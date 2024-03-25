@@ -1,95 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our School</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>API</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our School</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Academics</a></li>
-                <li class="dropdown-item">
-                    <a href="#">Events</a>
-                    <ul class="dropdown">
-                        <li><a href="independence.html">Independence</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md">
 
-    <div>
-        <section class="carousel">
-            <div class="carousel-images">
-                <img class="carousel-image" src="images/himage1.jpg" alt="Image 1">
-                <img class="carousel-image" src="images/himage2.jpg" alt="Image 2">
-                <img class="carousel-image" src="images/himage3.jpg" alt="Image 3">
-            </div>
-            
-        <section>   
+    <img src="images/logo.JPG" style="width: 50px; float: left; height: auto; border-radius: 50%; ">
+    &nbsp
+      <a class="navbar-brand" href="index.html">Angelo Perez Institute</a>
+    
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+             <a class="nav-link" id="log-in" href="Login.html" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)); padding: 10px; border-radius: 10px;">LOG-IN</a>
+          </li>
+    
+        </ul>
+      </div>
+    </nav>
+  <!-- END OF NAVBAR -->
+  <section class="hero">
+    <div class="container">
+    <div class="hero__overlay"></div>
+     <div class="hero__content h-100 container-custom position-relative">
+      <div class="d-flex h-100 align-items-center hero__content-width mt-10">
+        <div class="text-white col-12">
+          <h1 class="hero__heading fw-bold mb-4">Welcome to Angelo Perez Institute</h1>
+          <p class="lead mb-4">One of the leading Schools in the Country!</p>
+          <a href="register.html" class="mt-2 btn btn-lg btn-outline-light" role="button">Join Now!</a>
+        </div>
+        <img src="images/himage1.jpg" alt="heroimage" class="col-12">
+      </div>
     </div>
 
-    <main>
+    <a href="#scroll-down" class="hero__scroll-btn">
+      Explore <i class="bi bi-arrow-down-short"></i>
+    </a>
+  </div>
+  </section>
+  <!-- Hero End -->
 
-        <!-- Hero section with carousel -->
-        
-            <h2>About Our School</h2>
-            <p>Welcome to our school's homepage. We are dedicated to providing a nurturing and engaging environment for students to thrive academically, socially, and emotionally.</p>
-            <p>Our experienced faculty and staff are committed to fostering a love for learning and helping each student reach their full potential.</p>
-        </section>
+  <a id="scroll-down"></a>
+  <!-- Section One Start -->
+  <section class="steps container-custom">
 
-        <section>
-            <h2>Admissions</h2>
-            <p>Learn more about the admissions process and how to enroll your child in our school. We welcome students of all backgrounds and abilities.</p>
-            <a href="#">Apply Now</a>
-        </section>
+    <div class="row">
+      <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+        <img src="images/himage1.jpg" alt="im1" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+      </div>
 
-        <section>
-            <h2>Academics</h2>
-            <p>Explore our comprehensive academic programs designed to challenge and inspire students. From early childhood education to high school, we offer a diverse range of courses and extracurricular activities.</p>
-            <a href="#">Learn More</a>
-        </section>
+      <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
 
-        <section>
-            <h2>Upcoming Events</h2>
-            <p>Stay informed about upcoming events and activities at our school. Join us for exciting community events, parent-teacher conferences, and more.</p>
-            <a href="#">View Calendar</a>
-        </section>
+        <div class="steps__content-width">
+          <span>01</span>
+          <h1 class="h2 mb-4">Flavourfull Taste</h1>
+          <p class="mb-4">Our Coffee exels on having an impacful taste to our customers</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>Have questions or want to schedule a tour of our campus? Contact us today, and we'll be happy to assist you.</p>
-            <a href="#">Get in Touch</a>
-        </section>
-    </main>
+        </div>
 
-    <script>
-        // JavaScript for automatic image carousel
-        const carouselImages = document.querySelector('.carousel-images');
-        const carouselImageWidth = document.querySelector('.carousel-image').clientWidth;
-        let imageIndex = 0;
+      </div>
+    </div>
 
-        // Function to change the image every second
-        function changeImage() {
-            imageIndex++;
-            if (imageIndex >= carouselImages.children.length) {
-                imageIndex = 0;
-            }
-            const offset = -carouselImageWidth * imageIndex;
-            carouselImages.style.transform = `translateX(${offset}px)`;
-        }
+  </section>
+  <!-- Section One End -->
 
-        // Start the carousel
-        setInterval(changeImage, 1000); // Change image every second
-    </script>
+  <!-- Section One Start -->
+  <section class="steps steps--background">
+
+    <div class="container-custom">
+
+      <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
+          <img src="images/himage2.jpg" alt="im2" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+        </div>
+
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+          <div class="steps__content-width">
+            <span>02</span>
+            <h1 class="h2 mb-4">Fresh news</h1>
+            <p class="mb-4">made to order</p>
+            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Section One End -->
+
+  <!-- Section One Start -->
+  <section class="steps container-custom">
+
+    <div class="row">
+      <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+        <img src="images/himage3.jpg" alt="im3" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+      </div>
+
+      <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+
+        <div class="steps__content-width">
+          <span>03</span>
+          <h1 class="h2 mb-4">Fresh Coffee Beans</h1>
+          <p class="mb-4">Fresh batch of beans every week</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Section One End -->
+  <!-- Section With 3 Col's Start -->
+  <section class="bg-dark text-white py-4">
+    <div class="container-custom my-4">
+      <div class="row">
+
+        <div class="col-12 col-sm-4 mb-4">
+          <img src="images/" class="mb-4 img-fluid" alt="f1" width="441" height="248" loading="lazy">
+          <h3>Angelo Perez Institute</h3>
+          <p>Angelo Perez Institute is an online school where we focus on the student's and produce great minds.</p>
+        </div>
+
+        <div class="col-12 col-sm-4 mb-4">
+          <img src="images/" class="mb-4 img-fluid" alt="f2" width="441" height="248" loading="lazy">
+          <h3>Connect with us</h3>
+          <p>@AngeloPerezInstitute/Facebook</p>
+          <p>@AngeloPerezInstitute/Twitter</p>
+          <p>@AngeloPerezInstitute/Instagram</p>
+
+        </div>
+
+        <div class="col-12 col-sm-4 mb-4">
+          <img src="images/" class="mb-4 img-fluid" alt="f3" width="441" height="248" loading="lazy">
+          <h3>Contact Us!</h3>
+          <p>AngeloPerezInstitute@gmail.com</p>
+          <p>099444522</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section With 3 Col's End -->
+   <!-- Footer Start -->
+   <footer class="footer bg-dark text-white">
+    <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="me-2 text-muted text-decoration-none">
+          <i class="bi bi-cup"></i>
+          <span>&copy; 2024 Angelo Perez Institute</span>
+        </a> 
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+        <li class="ms-3 "><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+      </ul>
+
+
+    </div>
+
+
+
+  </footer>
+  <!-- Footer End -->
+</div>
 </body>
-</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

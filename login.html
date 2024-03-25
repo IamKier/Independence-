@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+  <title>Login</title>
+  <link rel="stylesheet" href="forms.css" />
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.getElementById('loginForm');
+
+  loginForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    
+    redirectToHomePage();
+  });
+});
+
+function redirectToHomePage() {
+  window.location.href = 'Homepage.html';
+}
+</script>
+
+</head>
+<body>
+  <div class="form-container">
+    <form id="loginForm">
+      <h3>Login</h3>
+    
+      <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required placeholder="Enter your Email">
+      <input type="password" name="password" required placeholder="Enter your Password">
+      <input type="submit" id="submit-btn" name="submit" value="Login" class="form-btn">
+      <p>Don't have an account? <a href="register.html">Register Now</a></p>
+    </form>
+  </div>
+</body>
+</html>
